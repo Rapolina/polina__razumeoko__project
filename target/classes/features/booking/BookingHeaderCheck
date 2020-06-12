@@ -1,0 +1,10 @@
+Feature: Account creation on the site booking.com
+Scenario: Check that you created an account on the site booking.com
+
+Given I open trashmail.com
+Then I create a new account on trashmail.com
+And I find an email from some dedicated sender
+And I go to booking.com
+And I register new user using new email address
+And I confirm your registration from mailbox
+And I verify, that mailbox was confirmed
